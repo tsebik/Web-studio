@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./utils/visually-hidden";
+
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/nav-info";
+
+@import "./components/hero/hero";
+
+@import "./components/section/section-tasks";
+@import "./components/section/section-work";
+@import "./components/section/section-team";
+@import "./components/section/section-clients";
+
+@import "./components/hero/modal";
+
+@import "./components/footer/footer";
+
+@import "./components/portfolio/portfolio-btn";
+@import "./components/portfolio/portfolio-carts";
+
+@import "./components/section/container";
+@import "./components/button/button";

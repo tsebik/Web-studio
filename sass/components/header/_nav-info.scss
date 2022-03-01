@@ -1,0 +1,38 @@
+.connect-list__tel {
+  margin-left: 50px;
+}
+
+.connect-list__link {
+  display: flex;
+  padding: 32px 0;
+
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: $paragraph-color;
+}
+
+.connect {
+  display: flex;
+  margin-left: auto;
+}
+
+.connect-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.connect-list {
+  display: flex;
+  margin-left: auto;
+
+  @include font(500, 14px, 1.14, null);
+  letter-spacing: 0.02em;
+}
+
+.connect-list__svg {
+  margin-right: 10px;
+  fill: currentColor;
+}

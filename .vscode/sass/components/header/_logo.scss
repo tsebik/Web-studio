@@ -1,0 +1,14 @@
+.nav__logo {
+  display: flex;
+  padding: 24px 0;
+  margin-right: 93px;
+
+  color: $accent-color;
+
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26px, 1.19, null);
+}
+
+.nav__logo--headercolor {
+  color: $black-color;
+}

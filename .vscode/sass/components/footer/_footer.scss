@@ -1,0 +1,176 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer--bgcolor {
+  background-color: $bg-primary;
+}
+
+.social-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-info {
+  margin-right: 70px;
+}
+
+.footer-info__logo {
+  display: flex;
+
+  color: $accent-color;
+
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26px, 1.19, null);
+}
+
+.footer-info__logotip--color {
+  color: $secondary-color;
+}
+
+.footer-address {
+  margin-top: 20px;
+  @include font(null, 14px, 1.71, normal);
+
+  color: $secondary-color;
+
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list__item {
+  margin-top: 9px;
+}
+
+.footer-list__link {
+  @include font(null, 14px, 1.71, null);
+
+  color: $additional-color;
+
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list__link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social__paragraph {
+  @include font(700, 14px, 1.14, null);
+
+  text-transform: uppercase;
+  color: $secondary-color;
+
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social__link {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-social__svg {
+  fill: $secondary-color;
+}
+
+.footer-group {
+  display: block;
+  margin-left: auto;
+}
+
+.footer-input__paragraph {
+  margin-bottom: 20px;
+
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+
+  color: $secondary-color;
+}
+
+.input-submit {
+  display: flex;
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $bg-primary;
+  color: $additional-color;
+
+  @include font(null, 16px, 1.25, null);
+  align-items: center;
+}
+
+.footer-input {
+  input::placeholder {
+    display: flex;
+    align-items: center;
+
+    @include font(null, 16px, 1.25, null);
+
+    color: $additional-color;
+  }
+}
+
+.submit {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.submit__btn {
+  display: flex;
+  padding-left: 29px;
+  margin-left: 12px;
+}
+
+.submit__svg {
+  margin-left: 10px;
+  fill: $secondary-color;
+}
