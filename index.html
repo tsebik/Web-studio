@@ -112,7 +112,27 @@
             <h2 class="section-team__title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__item">
-                    <img class="team-list__img" src="./images/man1.jpg" alt="Игорь Демьяненко(Product Designer)." width="270">
+                    <picture>
+                        <source
+                            srcset="./images/desk-man1.jpg 1x,
+                                    ./images/desk-man1-2x.jpg 2x"
+
+                            media="(min-width: 1200px)"
+                        >
+                        <source 
+                            srcset="./images/tab-man1.jpg 1x,
+                                    ./images/tab-man1-2x.jpg 2x" 
+                        
+                            media="(min-width: 768px)"
+                        >
+                        <source
+                            srcset="./images/mob-man1.jpg 1x,
+                                    ./images/mob-man1-2x.jpg 2x"
+
+                            media="(min-width: 320px)"
+                        >
+                        <img class="team-list__img" src="./images/desk-man1.jpg" alt="Игорь Демьяненко(Product Designer).">
+                    </picture>
                     <div class="container-team">
                     <h3 class="container-team__title">Игорь Демьяненко</h3>
                     <p class="container-team__paragraph" lang="en">Product Designer</p>
@@ -149,7 +169,25 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__img" src="./images/girl.jpg" alt="Ольга репина(Frontend Developer)." width="270">
+                    <picture>
+                        <source 
+                            srcset="./images/desk-girl.jpg 1x,
+                                    ./images/desk-girl-2x.jpg 2x"
+                                        
+                                    media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/tab-girl.jpg 1x,
+                                    ./images/tab-girl-2x.jpg 2x"
+
+                                    media="(min-width: 768px)">
+                        <source 
+                            srcset="./images/mob-girl.jpg 1x,
+                                    ./images/mob-girl-2x.jpg 2x"
+
+                                    media="(min-width: 320px)"
+                        >
+                        <img class="team-list__img" src="./images/desk-girl.jpg" alt="Ольга репина(Frontend Developer).">
+                    </picture>
                     <div class="container-team">
                     <h3 class="container-team__title">Ольга репина</h3>
                     <p class="container-team__paragraph" lang="en">Frontend Developer</p>
@@ -186,7 +224,25 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__img" src="./images/man2.jpg" alt="Николай Тарасов(Marketing)." width="270">
+                    <picture>
+                        <source 
+                            srcset="./images/desk-man2.jpg 1x,
+                                    ./images/desk-man2-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/tab-man2.jpg 1x,
+                                    ./images/tab-man2-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 768px)">
+                        <source 
+                            srcset="./images/mob-man2.jpg 1x,
+                                    ./images/mob-man2-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 320px)"
+                        >
+                        <img class="team-list__img" src="./images/desk-man2.jpg" alt="Николай Тарасов(Marketing).">
+                    </picture>
                     <div class="container-team">
                     <h3 class="container-team__title">Николай Тарасов</h3>
                     <p class="container-team__paragraph" lang="en">Marketing</p>
@@ -223,7 +279,25 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__img" src="./images/man3.jpg" alt="Михаил Ермаков(UI Designer)." width="270">
+                    <picture>
+                        <source 
+                            srcset="./images/desk-man3.jpg 1x,
+                                    ./images/desk-man3-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 1200px)">
+                        <source 
+                            srcset="./images/tab-man3.jpg 1x,
+                                    ./images/tab-man3-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 768px)">
+                        <source 
+                            srcset="./images/mob-man3.jpg 1x,
+                                    ./images/mob-man3-2x.jpg 2x" 
+                                    
+                                    media="(min-width: 320px)">
+
+                        <img class="team-list__img" src="./images/desk-man3.jpg" alt="Михаил Ермаков(UI Designer).">
+                    </picture>
                     <div class="container-team">
                     <h3 class="container-team__title">Михаил Ермаков</h3>
                     <p class="container-team__paragraph" lang="en">UI Designer</p>
@@ -262,7 +336,7 @@
             </ul>
             </div>
         </section>
-        <!-- <section class="clients">
+        <section class="clients">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list list">
@@ -310,7 +384,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!--Подвал страницы-->
     
