@@ -371,8 +371,10 @@ img {
   color: #757575;
 }
 
-.section-work {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .section-work__title {
