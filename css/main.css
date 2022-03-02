@@ -874,6 +874,21 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
 .footer--bgcolor {
   background-color: #2f303a;
 }
@@ -893,9 +908,17 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-info {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-info {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
