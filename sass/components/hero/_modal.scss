@@ -24,8 +24,8 @@
   position: absolute;
   padding: 40px;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -35,6 +35,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close {
@@ -67,10 +72,14 @@
 .modal-form__title {
   margin-bottom: 12px;
 
-  @include font(700, 20px, 1.15, null);
+  @include font(700, 20px, 1.5, null);
   text-align: center;
 
   color: $primary-color;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 20px, 1.15, null);
+  }
 }
 
 .form-field {
@@ -143,7 +152,7 @@
 }
 
 .form-checkbox__link {
-  margin-left: 10px;
+  @include font(null, 12px, 1.17, null);
 
   color: $accent-color;
   text-decoration: underline;
@@ -160,13 +169,21 @@
   align-items: center;
   justify-content: center;
 
-  @include font(null, 14px, 1.71, null);
+  @include font(null, 12px, 1.17, null);
 
   color: $paragraph-color;
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 14px, 1.71, null);
+  }
 }
 
 .form-checkbox {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 
 .form-checkbox__input:checked + .form-checkbox__icon {
