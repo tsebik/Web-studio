@@ -9,9 +9,28 @@
 .header-container {
   width: 480px;
   height: 60px;
-  margin: 0 2px 0 0;
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .menu-btn__close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
 }

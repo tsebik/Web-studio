@@ -30,16 +30,18 @@
 }
 
 .nav-list__link.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
+  @media screen and (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
 
-  display: block;
-  width: 100%;
-  height: 5px;
-  background-color: $accent-color;
-  border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
 
 .nav-list__link {
