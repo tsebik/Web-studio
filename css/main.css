@@ -1346,11 +1346,18 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .projects-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1362,13 +1369,22 @@ img {
   }
 }
 
-.projects-list__iteam {
-  position: relative;
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-  background: #ffffff;
+@media screen and (min-width: 768px) {
+  .projects-list__iteam {
+    position: relative;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    background: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list__iteam {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .projects-list__link {
