@@ -7,6 +7,11 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  width: 480px;
+  height: 60px;
+  margin: 0 2px 0 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }

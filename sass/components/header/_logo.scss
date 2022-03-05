@@ -1,12 +1,19 @@
 .nav__logo {
-  display: flex;
-  padding: 24px 0;
-  margin-right: 93px;
-
-  color: $accent-color;
+  display: inline-block;
+  padding: 16px 0;
 
   font-family: "Raleway", sans-serif;
-  @include font(700, 26px, 1.19, null);
+  @include font(700, 24px, 1.17, null);
+  color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding: 24px 0;
+    margin-right: 93px;
+
+    font-family: "Raleway", sans-serif;
+    @include font(700, 26px, 1.19, null);
+  }
 }
 
 .nav__logo--headercolor {
