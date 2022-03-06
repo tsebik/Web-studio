@@ -9,7 +9,7 @@
 .header-container {
   position: relative;
 
-  width: 480px;
+  max-width: 480px;
   height: 60px;
   @media screen and (min-width: 1200px) {
     display: flex;

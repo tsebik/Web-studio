@@ -70,7 +70,7 @@ img {
 
 .header-container {
   position: relative;
-  width: 480px;
+  max-width: 480px;
   height: 60px;
 }
 
@@ -359,7 +359,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-weight: 900;
     font-size: 44px;
