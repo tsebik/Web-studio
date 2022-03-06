@@ -19,12 +19,15 @@
         <div class="container header-container">
         <nav class="nav">
             <a class="nav__logo  animate__animated animate__flip" href="/">Web<span class="nav__logotip nav__logo--headercolor">Studio</span></a>
-            <button class="menu-btn is-open">
+            <button class="menu-btn is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="menu-btn__menu" href="./images/icons.svg#icon-menu_40px"></use>
                     <use class="menu-btn__close" href="./images/icons.svg#icon-close_40px"></use>
                 </svg>
             </button>
+            <div class="menu-container is-open" id="menu-container" data-menu>
+                menu
+                </div>
             <ul class="nav-list list">
                 <li class="nav-list__item"><a class="nav-list__link current" href="./index.html">Студия</a></li>
                 <li class="nav-list__item"><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
