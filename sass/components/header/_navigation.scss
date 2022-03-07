@@ -1,19 +1,19 @@
 .nav {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 }
 
 .nav-list__item + .nav-list__item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 50px;
   }
 }
 
 .nav-list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
 
     @include font(500, 14px, 1.14, null);
@@ -22,7 +22,7 @@
 }
 
 .nav-list__link {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: block;
     position: relative;
     padding: 32px 0;
@@ -30,7 +30,7 @@
 }
 
 .nav-list__link.current::after {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     content: "";
     position: absolute;
     left: 0;

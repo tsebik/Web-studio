@@ -1,12 +1,11 @@
 .connect-list__tel {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 50px;
   }
 }
 
 .connect-list__link {
-  @media screen and (min-width: 1200px) {
-    display: flex;
+  @media screen and (min-width: 768px) {
     padding: 32px 0;
 
     align-items: center;
@@ -14,14 +13,20 @@
 
     color: $paragraph-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .connect {
   display: none;
-  @media screen and (min-width: 1200px) {
-    display: flex;
+  @media screen and (min-width: 768px) {
     margin-left: auto;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
 }
 
 .connect-list__link {
@@ -32,12 +37,15 @@
 }
 
 .connect-list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-left: auto;
 
     @include font(500, 14px, 1.14, null);
     letter-spacing: 0.02em;
+
+      @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
