@@ -68,6 +68,19 @@ img {
   background-color: #ffffff;
 }
 
+.header-container {
+  position: relative;
+  max-width: 480px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+    height: 80px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-container {
     display: -webkit-box;
@@ -76,6 +89,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1600px;
+    height: 80px;
   }
 }
 
@@ -101,6 +116,7 @@ img {
 .nav__logo {
   display: inline-block;
   padding: 16px 0;
+  margin-right: 88px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -195,7 +211,7 @@ img {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .connect-list__tel {
     margin-left: 50px;
   }
@@ -203,7 +219,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .connect-list__link {
-    padding: 32px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -218,6 +233,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 32px 0;
   }
 }
 
@@ -230,6 +246,11 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect {
     margin-left: auto;
   }
 }
@@ -240,10 +261,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .connect-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin-left: auto;
+    padding-top: 21px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -251,9 +273,30 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .connect-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect-list__info {
+    margin-bottom: 10px;
+  }
+}
+
 .connect-list__svg {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .connect-list__svg {
+    margin-right: 8px;
+  }
 }
 
 .hero {
