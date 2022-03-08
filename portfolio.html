@@ -17,11 +17,50 @@
 </head>
 <body>
     <!-- Шапка страницы -->
-    <!-- <header class="header header--bgcolor">
+    <header class="header header--bgcolor">
         <div class="container header-container">
             <nav class="nav">
                 <a class="nav__logo  animate__animated animate__flip" href="/">Web<span
                         class="nav__logotip nav__logo--headercolor">Studio</span></a>
+                <button class="menu-open is-open">
+                    <svg width="40" height="40">
+                        <use class="menu-btn__menu" href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" data-menu>
+                    <button class="menu-close">
+                        <svg width="40" height="40">
+                            <use class="menu-btn__menu" href="./images/icons.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <ul class="nav-mob list">
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="./index.html">Студия</a></li>
+                        <li class="nav-mob__item"><a class="nav-mob__link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                    <ul class="connect-mob list">
+                        <li class="connect-mob__info">
+                            <a class="connect-mob__link" href="mailto:info@devstudio.com">
+                                <svg class="connect-mob__svg" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="connect-mob__tel">
+                            <a class="connect-mob__link" href="tel:+3809611111">
+                                <svg class="connect-mob__svg" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-mob list">
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="">Instagram</a></li>
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="">Twitter</a></li>
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="">Facebook</a></li>
+                        <li class="nav-mob__item"><a class="nav-mob__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
                 <ul class="nav-list list">
                     <li class="nav-list__item"><a class="nav-list__link" href="./index.html">Студия</a></li>
                     <li class="nav-list__item"><a class="nav-list__link current" href="./portfolio.html">Портфолио</a></li>
@@ -45,9 +84,10 @@
                             +38 096 111 11 11</a>
                     </li>
                 </ul>
+    
             </div>
         </div>
-    </header> -->
+    </header>
     <main>
         <section class="portfolio">
             <div class="container">

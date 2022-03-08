@@ -1,0 +1,171 @@
+.menu-open,
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn .menu-btn__close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+.menu-open,
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn .menu-btn__close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 796px;
+
+  padding: 48px 40px;
+  background-color: $secondary-color;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn.is-open .menu-btn__menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 796px;
+
+  padding: 48px 40px;
+  background-color: $secondary-color;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-mob {
+  margin-bottom: 32px;
+  @include font(500, 40px, 1.18, null);
+  letter-spacing: 0.02em;
+}
+
+.social-mob {
+  display: flex;
+  align-self: flex-end;
+}
+
+.connect-mob__info {
+  margin-top: 302px;
+  margin-bottom: 32px;
+}
+
+.connect-mob__tel {
+  margin-bottom: 64px;
+}
+
+.connect-mob__info,
+.connect-mob__tel {
+  @include font(500, 24px, 1.17, null);
+  letter-spacing: 0.02em;
+}
+
+.nav-mob__link {
+  color: $primary-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect-mob__link {
+  color: $paragraph-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-mob__link.current {
+  color: $accent-color;
+}
+
+.nav-mob__link {
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.menu-close {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.connect-mob__link {
+  &:focus,
+  &:hover {
+    @include font(500, 34px, 1.18, null);
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+}
+
+.social-mob__link {
+  @include font(500, 18px, 1.22, null);
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+
+.social-mob__item + .social-mob__item {
+  margin-left: 20px;
+}
