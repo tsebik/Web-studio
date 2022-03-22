@@ -25,11 +25,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -30px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: -30px;
   }
 }
 
@@ -53,7 +53,7 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 
     text-align: center;
     border-radius: 0px 0px 4px 4px;
