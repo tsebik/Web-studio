@@ -1589,6 +1589,7 @@ img {
 
 .projects-list__iteam {
   margin-bottom: 30px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .projects-list__iteam {
@@ -1610,7 +1611,14 @@ img {
 }
 
 .projects-list__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow;
   transition: -webkit-box-shadow;
   transition: box-shadow;
@@ -1664,6 +1672,9 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .carts__title {
