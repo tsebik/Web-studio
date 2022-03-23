@@ -61,6 +61,7 @@ img {
 }
 
 .header {
+  position: relative;
   border: 1px solid #ececec;
 }
 
@@ -69,7 +70,6 @@ img {
 }
 
 .header-container {
-  position: relative;
   max-width: 480px;
   height: 60px;
 }
