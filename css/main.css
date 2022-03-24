@@ -155,6 +155,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .nav-list__link {
+    position: relative;
     display: block;
     padding: 32px 0;
   }
@@ -322,7 +323,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 850px;
+  height: 100vh;
   z-index: 3;
   padding: 48px 40px;
   background-color: #ffffff;

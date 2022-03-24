@@ -23,6 +23,7 @@
 
 .nav-list__link {
   @media screen and (min-width: 768px) {
+    position: relative;
     display: block;
     padding: 32px 0;
   }
