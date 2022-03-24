@@ -319,7 +319,7 @@ img {
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -327,6 +327,14 @@ img {
   z-index: 3;
   padding: 48px 40px;
   background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2500ms;
+          transition-duration: 2500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {
   display: block;
