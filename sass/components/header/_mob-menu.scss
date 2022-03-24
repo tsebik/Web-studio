@@ -53,6 +53,21 @@
   }
 }
 
+.mob-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  z-index: 3;
+  padding: 48px 40px;
+}
+
 .menu-btn.is-open .menu-btn__menu {
   display: none;
 }
