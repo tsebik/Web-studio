@@ -55,6 +55,9 @@
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 395px) {
+    overflow: scroll;
+  }
 }
 
 .portfolio-overlay__img {
@@ -64,6 +67,9 @@
 }
 
 .portfolio-overlay__paragraph {
+  @media screen and (max-width: 395px) {
+    height: 100vw;
+  }
   position: absolute;
   top: 0;
   left: 0;
@@ -94,11 +100,17 @@
 
 .carts__title {
   margin-bottom: 4px;
-
-  color: $primary-color;
-
-  @include font(700, 18px, 2, null);
   letter-spacing: 0.06em;
+  color: $primary-color;
+  @include font(700, 18px, 2, null);
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 15px, 2, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 14px, 2, null);
+  }
 }
 
 .carts__paragraph {
