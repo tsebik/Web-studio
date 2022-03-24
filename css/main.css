@@ -420,7 +420,20 @@ img {
 }
 
 .social-mob__item + .social-mob__item {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.social-mob__item::after {
+  content: " ";
+  width: 22px;
+  height: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.social-mob__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
@@ -733,8 +746,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container-team {
-    padding-top: 30px;
-    padding-bottom: 32px;
+    padding: 30px 0 32px 0;
   }
 }
 
@@ -995,8 +1007,8 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #ffffff;
