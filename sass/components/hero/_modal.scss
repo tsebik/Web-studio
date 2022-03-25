@@ -168,7 +168,8 @@
 }
 
 .form-checkbox__label {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 

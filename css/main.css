@@ -189,21 +189,15 @@ img {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .connect-list__tel {
-    padding-bottom: 21px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .connect-list__tel {
     margin-left: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .connect-list__link {
+    padding: 21px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -217,6 +211,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 32px 0;
   }
 }
 
@@ -270,8 +265,6 @@ img {
 @media screen and (min-width: 1200px) {
   .connect-list__info {
     margin-bottom: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
@@ -1155,9 +1148,11 @@ img {
 }
 
 .form-checkbox__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1711,11 +1706,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 395px) {
-  .portfolio-overlay {
-    overflow: scroll;
-  }
-}
 
 .portfolio-overlay__img {
   display: block;
@@ -1743,7 +1733,8 @@ img {
 }
 @media screen and (max-width: 395px) {
   .portfolio-overlay__paragraph {
-    height: 100vw;
+    height: 100%;
+    overflow: scroll;
   }
 }
 .projects-list__link:hover .portfolio-overlay__paragraph, .projects-list__link:focus .portfolio-overlay__paragraph {

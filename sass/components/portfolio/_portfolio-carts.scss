@@ -55,9 +55,6 @@
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
-  @media screen and (max-width: 395px) {
-    overflow: scroll;
-  }
 }
 
 .portfolio-overlay__img {
@@ -68,7 +65,8 @@
 
 .portfolio-overlay__paragraph {
   @media screen and (max-width: 395px) {
-    height: 100vw;
+    height: 100%;
+    overflow: scroll;
   }
   position: absolute;
   top: 0;
